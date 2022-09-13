@@ -1,9 +1,25 @@
+body {
+  font-family: sans-serif;
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
 .content-container {
-    max-width: 1000px;
-    padding: 10px;
+    max-width: 800px;
+    width: 50%;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-right: -50%; /* Для компенсации  */
-    transform: translate(-50%, -50%)
+    left: 50%; /* Уменьшает доступную для элемента ширину на 50% */
+    margin-right: -50%; /* Для компенсации left: 50% */
+    transform: translate(-50%, -50%);
+
+    border: 2px solid lightsalmon;
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 5px black;
+    background: whitesmoke;
 }
