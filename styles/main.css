@@ -4,6 +4,13 @@ body {
   color: #fff;
 }
 
+h1 {
+    font-family: 'Oswald';
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
 .content-container {
     max-width: 800px;
     width: 50%;
@@ -21,5 +28,12 @@ body {
     border-radius: 20px;
 
     box-shadow: 10px 10px 5px black;
-    background: whitesmoke;
+    /* background: whitesmoke; */
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
 }
