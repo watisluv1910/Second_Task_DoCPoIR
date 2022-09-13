@@ -1,43 +1,96 @@
 body {
-  font-family: sans-serif;
-  background-color: #3d3d3d;
-  color: #fff;
+    font-family: sans-serif;
+    background-color: #3d3d3d;
+    color: #fff;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Oswald';
-    margin-bottom: 30px;
     text-transform: uppercase;
     text-decoration: underline;
+    margin-bottom: 25px;
 }
 
-h1 span {
+h1 span, h2 span {
     color: lightsalmon;
 }
 
-.content-container {
+a {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover { color: black; }
+
+a:active { color: lightsalmon; }
+
+.wrapper::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.wrapper {
     max-width: 800px;
     width: 50%;
-    padding: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    min-width: 600px;
+    padding: 15px;
 
     position: absolute;
     top: 50%;
     left: 50%; /* Уменьшает доступную для элемента ширину на 50% */
-    margin-right: -50%; /* Для компенсации left: 50% */
-    transform: translate(-50%, -50%);
+    margin-top: -20%; /* Для компенсации top: 50% */
+    transform: translate(-50%, 0%);
+}
+
+#additional-info .content-container:hover {
+    transform: scale(1.02);
+    z-index: 1;
+    transition: transform .5s;
+}
+
+#additional-info .content-container {
+    transform-origin: right bottom;
+}
+
+#cards .content-container {
+    text-align: center;
+}
+
+#cards img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container {
+    display: block;
+    padding: 25px;
 
     border: 2px solid lightsalmon;
     border-radius: 20px;
 
-    box-shadow: 10px 10px 5px black;
-    /* background: whitesmoke; */
+    box-shadow: 10px 15px 5px black;
+
+    margin-bottom: 25px; 
 }
 
-.content-container > div { /* Выберет только прямого потомка класса content-container */
+.content-container > div { /* Выберет только прямого div потомка класса content-container */
     width: 70%;
     color: rgb(100, 100, 100);
+    margin-bottom: 25px;
+}
+
+.content-container > p {
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #5b5b5b;
 }
 
 @font-face {
