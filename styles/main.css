@@ -1,0 +1,9 @@
+.content-container {
+    max-width: 1000px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%; /* Для компенсации  */
+    transform: translate(-50%, -50%)
+}
