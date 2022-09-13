@@ -11,6 +11,10 @@ h1 {
     text-decoration: underline;
 }
 
+h1 span {
+    color: lightsalmon;
+}
+
 .content-container {
     max-width: 800px;
     width: 50%;
