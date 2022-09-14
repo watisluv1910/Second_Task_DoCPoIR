@@ -18,7 +18,7 @@
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas quis ipsum suspendisse. Velit dignissim sodales ut eu. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Rutrum quisque non tellus orci ac auctor augue mauris. Fermentum iaculis eu non diam phasellus vestibulum lorem. Elementum integer enim neque volutpat ac tincidunt vitae. A arcu cursus vitae congue mauris. Faucibus et molestie ac feugiat sed lectus. Eu facilisis sed odio morbi quis commodo odio aenean. Sit amet nisl purus in mollis.</p>
                 </div>
-                <article id="additional-info">
+                <article id="additional-info" name="additional-info">
                     <section id="lists">
                         <div class="content-container list">
                             <h2>Web<span>Dev</span></h2>
@@ -53,6 +53,32 @@
                             <p style="text-transform: capitalize;">Viverra justo nec ultrices dui sapien eget mi.</p>
                         </div>
                     </section>
+                </article>
+                <article id="registration" name="registration">
+                    <form action="https://httpbin.org/get" method="het" class="content-container">
+                        <h2><span>Sign</span> Up <span>/</span> Log <span>In</span></h2>
+                        <fieldset>
+                            <p>
+                                <label for="get-email">Email</label>
+                                <br>
+                                <input type="email" name="email" id="get-email" required autocomplete="on">
+                            </p>
+                            <br>
+                            <p>
+                                <label for="get-password">Password</label>
+                                <br>
+                                <input type="password" name="password" id="get-password" required>
+                            </p>
+                            <br><br>
+                            <section>
+                                <button type="submit" id="submit"> <!-- Кнопка отправки формы -->
+                                    Submit
+                                </button>
+                                <br>
+                                <button type="reset" id="reset">Reset</button> <!-- Кнопка сброса формы -->
+                            </section>
+                        </fieldset>
+                    </form>
                 </article>
             </div>
         </main>
